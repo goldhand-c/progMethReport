@@ -1,0 +1,47 @@
+\documentclass[12pt,a4paper]{extarticle}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[
+  a4paper,   % paper size
+  top=14mm,   bottom=18mm,  % margin
+  left=20mm, right=20mm,
+  includehead, includefoot, % space header
+  marginparwidth=24mm, % sidenote
+  marginparsep=2mm,    % gap
+  % showframe, % show page structure
+]{geometry}
+
+\usepackage{silence}
+\WarningsOff* % From this point on, don't show me any warnings.
+\tracinglostchars=0 % suppress warning for missing characters
+
+% Use settings in this order to avoid crash
+\usepackage{setuptext}
+
+\usepackage{fancyhdr}
+\usepackage{titling,subfigure}
+\fancyhead[l]{\thetitle}
+\fancyhead[c]{\theauthor}
+\fancyhead[r]{\thedate}
+\pagestyle{fancy}
+
+\usepackage{fancyvrb}
+\usepackage{float}
+
+\usepackage{amsmath}
+\counterwithin{figure}{section}
+% Optional: Re-format to specifically show Section.Figure
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+
+
+\title{Final Project 2110215}
+\author{SaneLarbKoi}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{part1}
+\include{part2}
+
+\end{document}
